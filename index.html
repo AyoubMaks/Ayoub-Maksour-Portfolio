@@ -1,491 +1,195 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Développeur Full Stack</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-      <div class="nav-container">
-        <div class="nav-logo">Portfolio</div>
-        <ul class="nav-menu" id="nav-menu">
-          <li class="nav-item">
-            <a href="#home" class="nav-link active">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a href="#about" class="nav-link">À propos</a>
-          </li>
-          <li class="nav-item">
-            <a href="#skills" class="nav-link">Compétences</a>
-          </li>
-          <li class="nav-item">
-            <a href="#projects" class="nav-link">Projets</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
-        </ul>
-        <div class="nav-toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Portfolio</h1>
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#apropos" class="nav-link">À propos</a></li>
+                <li><a href="#projets" class="nav-link">Projets</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-      </div>
     </nav>
 
-    <!-- Section Hero -->
-    <section id="home" class="hero">
-      <div class="hero-container">
+    <!-- Section Accueil -->
+    <section id="accueil" class="hero">
         <div class="hero-content">
-          <div class="hero-avatar">
-            <div class="avatar-circle">
-              <svg
-                width="60"
-                height="60"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>
+            <h1>Bonjour, je suis <span class="highlight">Marie Dupont</span></h1>
+            <p class="hero-subtitle">Développeuse Web Frontend</p>
+            <p class="hero-description">
+                Je crée des sites web modernes et responsives avec une attention particulière 
+                à l'expérience utilisateur et aux performances.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                <a href="#contact" class="btn btn-secondary">Me contacter</a>
             </div>
-          </div>
-          <h1 class="hero-title">
-            Bonjour, je suis <span class="highlight">Ayoub</span>
-          </h1>
-          <h2 class="hero-subtitle">
-            <span id="typewriter"></span><span class="cursor">|</span>
-          </h2>
-          <p class="hero-description">
-            "Je suis passionné par la création de sites web et par le développement de mes compétences dans ce domaine."
-
-          </p>
-          <div class="social-links">
-            <a href="#" class="social-link">
-              <svg
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2">
-                <path
-                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-              </svg>
-            </a>
-            <a href="#" class="social-link">
-              <svg
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2">
-                <path
-                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                <rect x="2" y="9" width="4" height="12"></rect>
-                <circle cx="4" cy="4" r="2"></circle>
-              </svg>
-            </a>
-            <a href="#" class="social-link">
-              <svg
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2">
-                <path
-                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-            </a>
-          </div>
-          <div class="scroll-indicator">
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <polyline points="6,9 12,15 18,9"></polyline>
-            </svg>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- Section À propos -->
-    <section id="about" class="about">
-      <div class="container">
-        <h2 class="section-title">À propos de moi</h2>
-        <div class="about-content">
-          <div class="about-text">
-            <p>
-              J'ai étudié dans le domaine du développement informatique pendant
-              2 ans, de 2023 à 2025,
-              et j'ai obtenu un diplôme dans ce domaine. Je continue également à
-              suivre des cours pour améliorer mes compétences et me
-              perfectionner davantage.
-              J’ai la capacité de créer des sites web en utilisant HTML, CSS et
-              JavaScript. Je maîtrise également des logiciels tels que Excel,
-              Word et PowerPoint.
-
-            </p>
-            <div class="tech-tags">
-              <span class="tech-tag">html</span>
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">CSS</span>
-              <span class="tech-tag">word</span>
-              <span class="tech-tag">PowerPoint</span>
-              <span class="tech-tag">Excel</span>
+    <section id="apropos" class="about">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Passionnée par le développement web depuis 3 ans, je me spécialise dans 
+                        la création d'interfaces utilisateur intuitives et performantes.
+                    </p>
+                    <p>
+                        J'aime transformer des idées créatives en solutions web fonctionnelles 
+                        en utilisant les dernières technologies et les meilleures pratiques.
+                    </p>
+                    <div class="skills">
+                        <h3>Mes compétences</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">Sass</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <svg width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="about-visual">
-            <div class="code-illustration">
-              <svg
-                width="120"
-                height="120"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2">
-                <polyline points="16,18 22,12 16,6"></polyline>
-                <polyline points="8,6 2,12 8,18"></polyline>
-              </svg>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Section Compétences -->
-    <section id="skills" class="skills">
-      <div class="container">
-        <h2 class="section-title">Compétences</h2>
-        <div class="skills-grid">
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">JavaScript</span>
-              <span class="skill-percentage">40%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-progress" data-width="90"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">HTML</span>
-              <span class="skill-percentage">60%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-progress" data-width="85"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">CSS</span>
-              <span class="skill-percentage">60%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-progress" data-width="80"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">Microsoft Word</span>
-              <span class="skill-percentage">75%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-progress" data-width="75"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">Excel</span>
-              <span class="skill-percentage">88%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-progress" data-width="88"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">PowerPoint</span>
-              <span class="skill-percentage">70%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-progress" data-width="70"></div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- Section Projets -->
-    <!-- <section id="projects" class="projects">
-      <div class="container">
-        <h2 class="section-title">Mes Projets</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-image">
-              <img src="images/e-commerce.jpg" alt="E-Commerce Platform" />
-              <div class="project-overlay">
-                <div class="project-links">
-                  <a href="#" class="project-link">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2">
-                      <path
-                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                    Code
-                  </a>
-                  <a href="#" class="project-link">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2">
-                      <path
-                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15,3 21,3 21,9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                    Demo
-                  </a>
+    <section id="projets" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Site E-commerce">
+                    </div>
+                    <div class="project-content">
+                        <h3>Site E-commerce</h3>
+                        <p>Boutique en ligne moderne avec panier d'achat et système de paiement intégré.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Voir le projet</a>
+                            <a href="#" class="project-link">Code source</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">E-Commerce Platform</h3>
-              <p class="project-description">
-                Plateforme de commerce électronique complète avec React, Node.js
-                et MongoDB
-              </p>
-              <div class="project-tech">
-                <span class="tech-badge">React</span>
-                <span class="tech-badge">Node.js</span>
-                <span class="tech-badge">MongoDB</span>
-                <span class="tech-badge">Stripe</span>
-              </div>
-            </div>
-          </div>
 
-          <div class="project-card">
-            <div class="project-image">
-              <img
-                src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=500"
-                alt="Task Management App" />
-              <div class="project-overlay">
-                <div class="project-links">
-                  <a href="#" class="project-link">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2">
-                      <path
-                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                    Code
-                  </a>
-                  <a href="#" class="project-link">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2">
-                      <path
-                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15,3 21,3 21,9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                    Demo
-                  </a>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Application Météo">
+                    </div>
+                    <div class="project-content">
+                        <h3>Application Météo</h3>
+                        <p>Application web qui affiche les prévisions météorologiques en temps réel.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>API</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Voir le projet</a>
+                            <a href="#" class="project-link">Code source</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Task Management App</h3>
-              <p class="project-description">
-                Application de gestion de tâches avec authentification et temps
-                réel
-              </p>
-              <div class="project-tech">
-                <span class="tech-badge">Vue.js</span>
-                <span class="tech-badge">Firebase</span>
-                <span class="tech-badge">Vuetify</span>
-              </div>
-            </div>
-          </div>
 
-          <div class="project-card">
-            <div class="project-image">
-              <img
-                src="https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=500"
-                alt="Weather Dashboard" />
-              <div class="project-overlay">
-                <div class="project-links">
-                  <a href="#" class="project-link">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2">
-                      <path
-                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                    Code
-                  </a>
-                  <a href="#" class="project-link">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2">
-                      <path
-                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15,3 21,3 21,9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                    Demo
-                  </a>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Blog Personnel">
+                    </div>
+                    <div class="project-content">
+                        <h3>Blog Personnel</h3>
+                        <p>Blog responsive avec système de commentaires et interface d'administration.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Voir le projet</a>
+                            <a href="#" class="project-link">Code source</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="project-content">
-              <h3 class="project-title">Weather Dashboard</h3>
-              <p class="project-description">
-                Tableau de bord météo avec géolocalisation et prévisions
-                détaillées
-              </p>
-              <div class="project-tech">
-                <span class="tech-badge">JavaScript</span>
-                <span class="tech-badge">API REST</span>
-                <span class="tech-badge">Chart.js</span>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </section> -->
+    </section>
 
     <!-- Section Contact -->
     <section id="contact" class="contact">
-      <div class="container">
-        <h2 class="section-title">Contactez-moi</h2>
-        <div class="contact-content">
-          <div class="contact-info">
-            <h3>Travaillons ensemble</h3>
-            <p>
-              Je suis toujours intéressé par de nouveaux projets et
-              opportunités. N'hésitez pas à me contacter si vous souhaitez
-              discuter d'une collaboration.
-            </p>
-            <div class="contact-details">
-              <div class="contact-item">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2">
-                  <path
-                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                  <polyline points="22,6 12,13 2,6"></polyline>
-                </svg>
-                <span>ayoub.maksour2@gmail.com</span>
-              </div>
-              <div class="contact-item">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2">
-                  <path
-                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                </svg>
-                <span>github.com/AyoubMaks</span>
-              </div>
-              <div class="contact-item">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2">
-                  <path
-                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                  <rect x="2" y="9" width="4" height="12"></rect>
-                  <circle cx="4" cy="4" r="2"></circle>
-                </svg>
-                <span>linkedin.com/in/Ayoub MAKSOUR</span>
-              </div>
+        <div class="container">
+            <h2 class="section-title">Contactez-moi</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Restons en contact</h3>
+                    <p>N'hésitez pas à me contacter pour discuter de vos projets ou pour toute collaboration.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <strong>Email:</strong> marie.dupont@email.com
+                        </div>
+                        <div class="contact-item">
+                            <strong>Téléphone:</strong> +33 6 12 34 56 78
+                        </div>
+                        <div class="contact-item">
+                            <strong>Localisation:</strong> Paris, France
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
             </div>
-          </div>
-          <form class="contact-form" id="contact-form">
-            <div class="form-group">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Votre nom"
-                required />
-            </div>
-            <div class="form-group">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Votre email"
-                required />
-            </div>
-            <div class="form-group">
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                placeholder="Votre message"
-                required></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Envoyer le message</button>
-          </form>
         </div>
-      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container">
-        <p>&copy; 2025 Ayoub Portfolio. Créé avec passion </p>
-      </div>
+        <div class="container">
+            <p>&copy; 2024 Marie Dupont. Tous droits réservés.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
